@@ -1,0 +1,340 @@
+body {
+    background-image: linear-gradient(to right, white, rgb(255, 213, 207));
+    font-family: 'Poppins';
+    margin:0;
+    color: rgb(42, 32, 32);
+    overflow-wrap: anywhere;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-size: min(5vw, 3.75rem);
+    margin:0;
+}
+h2, h3 {
+    color: rgb(113, 32, 18);
+}
+.heading {
+    font-weight: bolder;
+    text-align: center;
+}
+.topnav {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+    z-index: 6969;
+}
+.topnav a {
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.topnav b {
+    margin-right: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    opacity:0.9;
+}
+p {
+    opacity:0.8;
+}
+.flex{
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.flex3 {
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.flexItem {
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+}
+.flexItem img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    display: block;
+}
+.teamImgThing img{
+    display: block;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.teamGridBox {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas: "area1 area2 area3 area4";
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    box-sizing: border-box;
+}
+@media (max-width: 1150px) {
+    .teamGridBox {
+        grid-template-columns: 1fr, 1fr;
+        grid-template-areas:
+            "area1 area2"
+            "area3 area4";
+    }
+}
+@media (max-width: 600px) {
+    .teamGridBox {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "area1"
+            "area2"
+            "area3"
+            "area4";
+    }
+}
+.teamThing {
+    position: relative;
+    width: 250px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: -20px auto 0;
+    padding: 12px 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    text-align: center;
+    z-index: 6769;
+}    
+.teamThing h3 {
+    margin: 0 0 4px;
+}
+.teamThing p {
+    margin: -3px;
+}
+
+.flexItem2 {
+    width: 600px;
+    text-align: justify;
+    padding: 20px;
+}
+.flexColumn {
+    flex-direction: column;
+}
+@media (max-width: 770px) {
+    .flex {
+        min-width: 0;
+    }
+    .topnav {
+        box-sizing: border-box;
+        height: auto;
+        min-height: 64px;
+        padding: 6px 10px;
+        flex-wrap: nowrap;
+        overflow: visible;
+    }
+    .topnav b {
+        flex: 0 1 auto;
+    }
+    .topnav b img {
+        width: 100px;
+        height: auto;
+    }
+    .topnav a {
+        flex: 0 0 auto;
+        padding: 10px 6px;
+        font-size: 0.875rem;
+        white-space: nowrap;
+    }
+    .flexItem {
+        flex: 1 1 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+    .flexItem2 {
+        width: 100%;
+        max-width: 600px;
+        box-sizing: border-box;
+    }
+}
+.hero {
+    width: 100%;
+    min-height: calc(100svh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/Background.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.heroText {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .hero {
+        min-height: 70svh;
+        background-position: center center;
+    }
+}
+.sec4to7 {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 213, 207, 0.8)), url('../images/background1-1.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.grid {
+    Display: grid;
+    grid-template-columns: 1fr;
+}
+.gridItem {
+    background-color: gray;
+}
+.footer {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(79, 47, 51);
+    color: white;
+}
+.footer img, .footer .footerLinks {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.footer img {
+    margin-left: 40px;
+}
+.footer .footerLinks {
+    margin-right: 40px;
+}
+.footer .footerDesc {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 0.75rem;
+    margin-bottom: 12px;
+}
+.footer img {
+    width: 130px;
+    height: auto;
+}
+.footerLinks {
+    display: flex;
+    justify-self: end;
+}
+.footerLinks a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.footerLinks img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin: 0;
+}
+.footerDesc a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.footerInfos {
+    grid-column: 1 / -1;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    text-align: center;
+    background-color: rgb(55, 36, 36);
+}
+.footerInfos p {
+    margin: 4px 0;
+}
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        text-align: center;
+    }
+    .footerLinks {
+        justify-self: center;
+    }
+    .footerInfos {
+        grid-column: 1;
+    }
+}
+.fadeInAnim {
+    animation: fadeIn linear both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 40%;
+    z-index: 2;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.popInAnim {
+    animation: popInAnim 1s ease-out both;
+    z-index: 1;
+}
+@keyframes popInAnim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.on-hoverAnim {
+    transform: translateY(0px);
+    border-radius: 30px;
+    opacity: 0.9; 
+    transition: transform 180ms ease-in-out, opacity 180ms ease-in-out;  
+}
+.on-hoverAnim:hover {
+    transform: translateY(-4px);
+    opacity: 1;
+}
+.bopAnim {
+    animation: bopAnim 1s ease-in-out both;
+    z-index: 1;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes bopAnim {
+    from {
+        transform: translatey(0px)
+    }
+    to {
+        transform: translatey(10px)
+    }
+}
